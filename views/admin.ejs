@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/admin_styles.css" type="text/css">
+    <title>Guestbook</title>
+</head>
+<body>
+    <div>
+        <h1>Guest Entries</h1>
+        <table border = "1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Job</th>
+                    <th>Company</th>
+                    <th>LinkedIn URL</th>
+                    <th>Email</th>
+                    <th>How We Met</th>
+                    <th>Message</th>
+                    <th>Mailing List</th>
+                    <th>Mailing List Format</th>
+                    <th>Date Submitted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% guests.forEach(guest => { %>
+                    <tr>
+                        <td><%= guest.id %> </td>
+                        <td><%= guest.first_name %> <%= guest.last_name %> </td>
+                        <td><%= guest.job_title %> </td>
+                        <td><%= guest.company %> </td>
+                        <td><%= guest.linkedin %> </td>
+                        <td><%= guest.email %> </td>
+                        <td><%= guest.meeting %> </td>
+                        <td><%= guest.message %> </td>
+                        <td><%= guest.mailing_list %> </td>
+                        <td><%= guest.mailing_format %> </td>
+                        <td><%= guest.date_submitted %> </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

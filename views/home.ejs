@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/media.png" >
+    <title>Guestbook</title>
+</head>
+<body>
+    <form id="guestbookForm" method="post" action="/success">
+        <fieldset>
+            <h1>Contact Form</h1>
+                <div class="contactInfo">
+                    <div>
+                        <label for="fname">First Name</label> 
+                        <span class="err" id="err-fname">* Input Required</span>
+                        <input type="text" id="fname" name="fname">
+                    </div>  
+
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <span class="err" id="err-lname">* Input Required</span>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+
+                    <div>
+                        <label for="job">Job Title</label>
+                        <input type="text" id="job" name="job">
+                    </div>
+
+                    <div>
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div>
+                        <label for="linkedIn">LinkedIn URL</label>
+                        <span class="err" id="err-linkedIn">* Please input valid LinkedIn URL</span>
+                        <input type="text" id="linkedIn" name="linkedIn">
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <span class="err" id="err-email">* Input Required</span>
+                        <span class="err" id="err-emailFormat">* Please input valid email address</span>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+
+                <div class="otherInfo">
+                    <div class="meetDropDown">
+                        <label for="meeting">How did we meet?</label>
+                        <span class="err" id="err-meetDropDown">* Input Required</span>
+                        <select name="meeting" id="meeting">
+                            <option value="select">Please Select</option>
+                            <option value="school">Class or School Event</option>
+                            <option value="jobFair">Job Fair</option>
+                            <option value="work">Work</option>
+                            <option value="networking">Networking Event</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div id="meetingOtherSegment">
+                        <label for="meetingOther">Other (please specify)</label>
+                        <span class="err" id="err-meetingOther">* Input Required</span>
+                        <input type="text" id="meetingOther" name="meetingOther">
+                    </div> 
+
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message">
+                    </div>
+
+                    <div class="mailCheckbox">
+                        <input type="checkbox" id="mailing" name="mailing">
+                        <label for="mailing">Please add me to your mailing list</label>
+                    </div> 
+
+                    <div id="emailFormat">
+                        <p>Choose an email format: </p>
+                        <input type="radio" id="htmlFormat" name="format">
+                        <label for="htmlFormat"> HTML</label>
+                        <input type="radio" id="textFormat" name="format">
+                        <label for="textFormat"> Text</label>
+                    </div>
+
+
+                    <button type="submit" id="click">Submit</button>
+                </div>
+    </fieldset>
+    </form>
+</body>
+</html>

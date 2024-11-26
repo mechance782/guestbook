@@ -1,0 +1,116 @@
+/* Global Styling */
+
+body {
+    background-color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #444;
+    font-weight: bold;
+}
+
+
+fieldset {
+    width: 90%;
+    margin: 1em auto;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 5px lightgrey;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.err {
+    display: none;
+    font-size: .75em;
+    color: rgb(168, 47, 47);
+}
+
+/* Personal details form styles */
+
+input[type=text] {
+    width: 100%;
+    border: 1px rgb(230, 230, 230) solid;
+    border-radius: 3px;
+    height: 2.5em;
+}
+
+.contactInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+}
+
+/* meeting information and message styling */
+
+.otherInfo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#meetingOtherSegment {
+    display: none;
+    width: 49%;
+    margin: 1.5em 0;
+}
+
+.meetDropDown {
+    width: 49%;
+    margin: 1.5em 0;
+}
+
+select {
+    display: block;
+    width: 100%;
+    border-radius: .25rem;
+    height: 2.5em;
+    border: 1px rgb(230, 230, 230) solid;
+}
+
+.message {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.message input {
+    height:9em;
+}
+
+/* Mailing list information styling */
+.mailCheckbox {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#emailFormat {
+    display: none;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+#emailFormat input, #emailFormat label, #emailFormat p {
+    display: inline;
+}
+
+
+/* button styling */
+
+button {
+    font-family: Arial;
+    font-size: 1em;
+    padding: .75em 1em;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background-color:rgb(79, 160, 79);
+}
+
+button:active {
+    background-color: rgb(59, 120, 59);
+}
+
+
